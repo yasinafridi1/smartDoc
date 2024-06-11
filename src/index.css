@@ -1,0 +1,245 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap'); */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Exo 2", sans-serif;
+    /* font-family: 'Satoshi', sans-serif; */
+    font-weight: 400;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --white:#fff;
+    --golden:#FFFECA;
+    --black:#28282B;
+    --link:#487ee9;
+    --linkDeep:#043eb1;
+
+}
+
+html{
+    width: 100vw;
+    overflow-x: hidden;
+    color:var(--black);
+    background-color: var(--white);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+
+.text-link{
+    color:var(--link);
+    transition:all .3s ease-in-out;
+}
+
+.text-link:hover{
+    color: var(--linkDeep);
+}
+
+.secondary-nav{
+    background-color: var(--black);
+    color: var(--white);
+}
+.satoshi-400{
+    font-weight: 400;
+}
+.satoshi-500 {
+    font-weight: 500;
+}
+.satoshi-700 {
+    font-weight: 700;
+}
+.satoshi-900 {
+    font-weight: 900;
+}
+
+.font-sofadi {
+    font-family: "Sofadi One", system-ui;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.font-indie {
+    font-family: "Indie Flower", cursive;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.star-svg {
+    background-color: #FFA800;
+}
+
+.star-svg path {
+    fill:var(--white);
+}
+
+#usecase,#whyus, #packages,#testimonial{
+    position: relative;
+}
+#usecase::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: var(--golden);
+    position: absolute;
+    top: 110%;
+    left: 0;
+    border-radius: 8px;
+    z-index: 2;
+}
+
+#usecase::before{
+    position: absolute;
+    content: "What you can";
+    font-size: 11px;
+    top: 85%;
+    background-color: var(--black);
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: max-content;
+    z-index: 3;
+    padding: 2px 4px;
+}
+
+#whyus::after{
+    content: "";
+        width: 100%;
+        height: 3px;
+        background-color: var(--black);
+        position: absolute;
+        top: 115%;
+        left: 0;
+        border-radius: 8px;
+        z-index: 2;
+}
+
+#whyus::before {
+    position: absolute;
+    content: "What you get";
+        font-size: 11px;
+        top: 90%;
+        background-color: var(--white);
+        left: 50%;
+        transform: translateX(-50%);
+        min-width: max-content;
+        z-index: 3;
+        padding: 2px 4px;
+}
+
+/* #packages::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: var(--black);
+    position: absolute;
+    top: 115%;
+    left: 0;
+    border-radius: 8px;
+    z-index: 2;
+}
+
+#packages::before {
+    position: absolute;
+    content: "What we offer";
+    font-size: 11px;
+    top: 90%;
+    background-color: var(--white);
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: max-content;
+    z-index: 3;
+    padding: 2px 4px;
+} */
+
+#testimonial::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: var(--black);
+    position: absolute;
+    top: 115%;
+    left: 0;
+    border-radius: 8px;
+    z-index: 2;
+}
+
+#testimonial::before {
+    position: absolute;
+    content: "What clients say";
+    font-size: 11px;
+    top: 90%;
+    background-color: var(--white);
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: max-content;
+    z-index: 3;
+    padding: 2px 4px;
+}
+
+.packageCard{
+    box-shadow: 0px 0px 11px 0px #e0dede;
+}
+
+.brownGradient{
+    background-color: var(--black);
+}
+
+
+/* #premium,#basic,#standard {
+    background: linear-gradient(90deg,#3E5151,#DECBA4);
+} */
+
+.dashboardCards{
+    background: linear-gradient(120deg, #000000, #f2eca1);
+    box-shadow: 0px 0px 5px 0px #ebebeb;
+
+}
+
+.animateMenu {
+    animation: animatemenu 0.8s linear;
+}
+
+@keyframes animatemenu {
+    0% {
+        top: -10%;
+        opacity: 0;
+    }
+
+    50% {
+        top: -5%;
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+.slick-arrow{
+    background-color: rgb(4, 4, 4) !important;
+    border-radius: 50%;
+}
+
+.fileLoader::after{
+    position: absolute;
+    border-top: 6px solid rgb(37, 1, 22);
+    content: "";
+    width: 100%;
+    height: 50%;
+    top: 10%;
+    left: 0;
+    color: red !important;
+    z-index: 2;
+    background-color: rgba(139, 139, 139, 0.353);
+}
+
+
